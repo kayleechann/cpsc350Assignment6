@@ -13,6 +13,7 @@ Assignment 6 <br/>
 - GenerateFile.h
 - GenerateFile.cpp
 - main.cpp
+- Makefile
 
 3. When file can't be opened and the user says "no" to if they wanted a file to be created for them, the program terminates and output a message, but it also outputs a "free pointer" error.  
 
