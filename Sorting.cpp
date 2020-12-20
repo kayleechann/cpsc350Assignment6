@@ -115,6 +115,7 @@ int Sorting::partition(double arr[], int left, int right){
     return left;
 }
 
+//quickSort() takes in an arry and parititons left and right, then recursively sorts
 void Sorting::quickSort(double arr[], int left, int right){
  int idx = partition(arr, left, right);
   if(left < idx - 1) {

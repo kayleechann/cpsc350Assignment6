@@ -5,7 +5,7 @@ class Sorting{
 public:
   Sorting();
   ~Sorting();
-  
+
   //sorting methods
   void readFile(string file);
   void quickSort(double arr[], int low, int high);
