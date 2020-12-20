@@ -207,11 +207,12 @@ void Sorting::bubbleSort(double arr[]){
 }
 
 void Sorting::sortAll(){
+  //--------QUICK SORT----------
   int n = sizeof(quickArr)/sizeof(quickArr[0]);
   clock_t quickStartTime = clock();
   quickSort(quickArr, 0, n - 1);
   clock_t quickEndTime = clock();
-  double duration = ((quickEndTime - quickStartTime)/(double)(CLOCKS_PER_SEC));//(double)(quickEndTime - quickStartTime);
+  double duration = ((quickEndTime - quickStartTime)/(double)(CLOCKS_PER_SEC));
   cout << "Sorting Algorithm: Quick Sort" << endl;
   cout << "Time Sort Started: " << quickStartTime << endl;
   cout << "Time Sort Ended: " << quickEndTime << endl;
@@ -222,29 +223,29 @@ void Sorting::sortAll(){
   clock_t mergeStartTime = clock();
   mergeSort(mergeArr, 0, totalElements - 1);
   clock_t mergeEndTime = clock();
-  double durationmerge = ((mergeEndTime - mergeStartTime)/(double)(CLOCKS_PER_SEC));//(double)(quickEndTime - quickStartTime);
+  double durationmerge = ((mergeEndTime - mergeStartTime)/(double)(CLOCKS_PER_SEC));
   cout << "Sorting Algorithm: Merge Sort" << endl;
   cout << "Time Sort Started: " << mergeStartTime << endl;
   cout << "Time Sort Ended: " << mergeEndTime << endl;
   cout << "Duration of Sorting(in s): " << durationmerge << " seconds " << endl;
   cout << "Duration of Sorting(in ms): " << durationmerge*1000 << " milliseconds "<< endl << endl;
 
-  //--------selction SORT----------
+  //--------SELECTION SORT----------
   clock_t selectionStartTime = clock();
   selectionSort(selectionArr, totalElements);
   clock_t selectionEndTime = clock();
-  double durationselection = ((selectionEndTime - selectionStartTime)/(double)(CLOCKS_PER_SEC));//(double)(quickEndTime - quickStartTime);
+  double durationselection = ((selectionEndTime - selectionStartTime)/(double)(CLOCKS_PER_SEC));
   cout << "Sorting Algorithm: Selection Sort" << endl;
   cout << "Time Sort Started: " << selectionStartTime << endl;
   cout << "Time Sort Ended: " << selectionEndTime << endl;
   cout << "Duration of Sorting(in s): " << durationselection << " seconds " << endl;
   cout << "Duration of Sorting(in ms): " << durationselection*1000 << " milliseconds "<< endl << endl;
 
-  //--------insertion SORT----------
+  //--------INSERTION SORT----------
   clock_t insertionStartTime = clock();
   insertionSort(insertionArr, totalElements);
   clock_t insertionEndTime = clock();
-  double durationinsertion = ((insertionEndTime - insertionStartTime)/(double)(CLOCKS_PER_SEC));//(double)(quickEndTime - quickStartTime);
+  double durationinsertion = ((insertionEndTime - insertionStartTime)/(double)(CLOCKS_PER_SEC));
   cout << "Sorting Algorithm: Insertion Sort" << endl;
   cout << "Time Sort Started: " << insertionStartTime << endl;
   cout << "Time Sort Ended: " << insertionEndTime << endl;
@@ -255,7 +256,7 @@ void Sorting::sortAll(){
   clock_t bubbleStartTime = clock();
   bubbleSort(bubbleArr);
   clock_t bubbleEndTime = clock();
-  double durationbubble = ((bubbleEndTime - bubbleStartTime)/(double)(CLOCKS_PER_SEC));//(double)(quickEndTime - quickStartTime);
+  double durationbubble = ((bubbleEndTime - bubbleStartTime)/(double)(CLOCKS_PER_SEC));
   cout << "Sorting Algorithm: Bubble Sort" << endl;
   cout << "Time Sort Started: " << bubbleStartTime << endl;
   cout << "Time Sort Ended: " << bubbleEndTime << endl;
